@@ -17,9 +17,10 @@ const contacts = [
 ];
 
 app.get("/", function (req, res) {
-  res.send("Hello EPSI");
+  res.send("Hello CESI");
 });
 app.get("/api/contacts", function (req, res) {
   res.status(200).json(contacts);
 });
-app.listen(3002);
+
+module.exports = app;
